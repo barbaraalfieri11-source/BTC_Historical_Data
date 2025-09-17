@@ -30,4 +30,4 @@ df = df[["timestamp","open","high","low","close","volume"]].astype({
 }).drop_duplicates("timestamp").sort_values("timestamp").reset_index(drop=True)
 
 df.to_csv("btc_1h.csv", index=False)
-print(f"✅ Save {len(df):,} rows in btc_1h.csv")
+print(f"Saved {len(df):,} rows in btc_1h.csv")
